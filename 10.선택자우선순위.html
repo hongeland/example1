@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* 선택자
+        css에서 html 요소를 선택하는 방법
+        tag , id, class 
+        */
+      * {
+        margin: 0;
+      }
+      table {
+        border: 1px solid blue;
+        border-collapse: collapse;
+      }
+      td,
+      th {
+        border: 1px solid #ccc;
+        width: 100px;
+      }
+      tr {
+        background-color: rgb(82, 153, 51);
+        color: #ffffff;
+        /* color : rgb(255,255,255) */
+      }
+      td {
+        text-align: center;
+        height: 50px;
+      }
+      .u {
+        color: red;
+      }
+      .id {
+        color: aqua;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th class="u id">1 1</th>
+          <th class="u" id="id">1 2</th>
+          <th class="u">1 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2 1</td>
+          <td>2 2</td>
+          <td>2 3</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

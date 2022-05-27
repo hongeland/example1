@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* 선택자
+        css에서 html 요소를 선택하는 방법
+        tag , id, class 
+        */
+      * {
+        margin: 0;
+      }
+      table {
+        border: 1px solid blue;
+        border-collapse: collapse;
+        width: 800px;
+      }
+      td,
+      th {
+        border: 1px solid #ccc;
+        width: 100px;
+      }
+      tr {
+        background-color: rgb(82, 153, 51);
+        color: #ffffff;
+        /* color : rgb(255,255,255) */
+      }
+      td {
+        text-align: center;
+        height: 50px;
+      }
+      .u {
+        color: red;
+      }
+      .id {
+        width: 200px;
+        color: aqua;
+      }
+      .u1 {
+        width: 30px;
+      }
+      .u2 {
+        width: 180px;
+      }
+      .bt {
+        padding: 5px 10px;
+        border: 3px solid #ccc;
+        background-color: rgb(22, 164, 138);
+        border-radius: 20px;
+        border-color: rgb(234, 128, 7);
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th class="u1">1 1</th>
+          <th class="u2">1 2</th>
+          <th class="u3">1 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="bt">세부내용보기</span></td>
+          <td>2 2</td>
+          <td>2 3</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
