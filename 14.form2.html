@@ -4,13 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .center {
+        text-align: center;
+        height: 36px;
+      }
+      table {
+        width: 300px;
+        margin: 0 auto;
+      }
+      table,
+      td {
+        padding: 5px;
+        border: 1px solid orange;
+        border-collapse: collapse;
+      }
+      input {
+        width: 100px;
+      }
+    </style>
     <title>Document</title>
   </head>
   <body>
     <form action="#">
-      <input type="text" name="uname" />
-      <input type="password" name="pw" />
-      <button>전달</button>
+      <table>
+        <tr>
+          <td colspan="2" class="center">로그인</td>
+        </tr>
+        <tr>
+          <td class="center">id</td>
+          <td>
+            <input type="text" name="id" />
+          </td>
+        </tr>
+        <tr>
+          <td class="center">패스워드</td>
+          <td>
+            <input type="password" name="pw" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="center"><button>로그인</button></td>
+        </tr>
+      </table>
     </form>
   </body>
 </html>
