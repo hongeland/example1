@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #page {
+        width: 1000px;
+        margin: 0 auto;
+      }
+      #main {
+        display: flex;
+      }
+      header,
+      nav,
+      footer {
+        border: 1px solid red;
+        height: 100px;
+      }
+      aside {
+        height: 200px;
+        width: 200px;
+        background-color: gray;
+      }
+      section {
+        min-height: 600px;
+        width: 600px;
+        background-color: aqua;
+      }
+    </style>
+    <title>3단 레이아웃</title>
+  </head>
+  <body>
+    <!-- 
+      layout : 전체적인 구성 잡을수 있어야 한다.
+      semantic tag 사용한다.
+      inline-block : element요소 넗이.
+      float : 원래 목적대로 사용하자.
+      flex : 좌우, 위아래 배치.
+      position : 내가 원하는 임의 위치에 가져다 놓기.
+      
+     -->
+    <h1>semantic 테그을 이용한 layout</h1>
+    <p>header, nav, footer, section, article, aside</p>
+    <hr />
+    <div id="page">
+      <header></header>
+      <nav></nav>
+      <div id="main">
+        <aside></aside>
+        <section></section>
+        <aside></aside>
+      </div>
+      <footer></footer>
+    </div>
+  </body>
+</html>
