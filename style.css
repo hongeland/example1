@@ -1,0 +1,162 @@
+@charset "UTF-8";  
+/* 스타일시트 맨 처음에 위치.  */
+/* ※ 주의: 어떤 문자도 선행 불가. */
+/* 스타일시트 문자 인코딩방식 지정 */
+/* 브로워저의 기본 css 값을 리셋  reset */
+/* font-family: 'Nanum Gothic', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic', sans-serif;    
+    overflow: hidden;
+  }
+
+  #page{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;    
+  }
+
+  #header {
+    display:flex;
+    justify-content: space-between;
+    top: 0;
+    /* border: 1px solid #ccc; */
+    height: 48px;
+    padding: 6px;
+  }
+
+  #header > div {
+    display:flex;
+    align-items: center;    
+  }
+
+  #header > div >a,#header > div >i{
+    padding: 10px;
+  }
+
+  #header .link_button {
+    background-color: #4285f4;;
+    color: white;
+    width: 196px;
+    height:140px;
+    line-height:40px;
+    padding: 0 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  #logo{
+    text-align: center;
+  }
+
+  #search {
+    height:140px;
+    /* border: 1px solid orange; */
+    text-align: center;
+  }
+
+  #search>div:first-of-type{
+    display: flex; 
+    justify-content: center;
+  }
+  
+  #search_input {
+    width:580px;
+    height:46px;
+    border-radius: 23px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;  
+    position: relative;    
+  }
+
+  #search_input input{
+    width:500px;
+    height:46px;
+    margin-left: 20px;
+    border:none; 
+    font-size:20px; 
+  }
+
+  #search_input input:focus {
+    font-size:20px;
+    /* border:none;  */
+    outline: none;
+  }
+
+
+
+  #search .fa-search {
+    position: absolute;
+    left:20px;
+    top: 15px;    
+  }
+
+  #search #search_input_right_icon {
+    position: absolute;
+    right:20px;
+    top: 15px;
+  }
+
+
+
+  #search_button {   
+    /* width:300px;  */
+    /* margin: 15px;     */
+  }
+  #search_button button{
+    margin:0 10px;   
+    padding: 10px 15px;
+    border-radius:5px;
+    border: 1px solid white;
+    background-color:#f2f2f2;
+  }
+
+  #search_button button:hover{
+    border: 1px solid #ccc;
+  }
+  #footer {
+    bottom: 0;
+    height:100px;
+    /* border: 1px solid aqua; */
+  }
+
+  #footer_upper {  
+    color: #70757a;  
+    height:51px;
+    line-height: 51px;
+    padding:0 10px;
+    background-color:  #f2f2f2;
+    border-bottom: 1px solid #dadce0;
+    /* font-weight: bold; */
+  }
+  #footer_lower {
+    color: #70757a;  
+    height:51px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    /* padding:0 10px; */
+    background-color: #f2f2f2;
+  }
+
+  #footer_lower > div >a{
+    color: #70757a;  
+    padding:0 10px;
+  }
+
+  .link {    
+    text-decoration: none;
+  }
+
+  .link:hover{
+    text-decoration: underline;
+    cursor:pointer;
+  }
+
+  .black{
+    color: black;
+  }  

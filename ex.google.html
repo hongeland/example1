@@ -24,7 +24,7 @@
         flex-direction: row;
         justify-content: space-between;
         height: 60px;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         align-items: center;
       }
 
@@ -72,9 +72,29 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
 
         height: 100px;
         /* border: 1px solid green; */
+      }
+      input {
+        width: 300px;
+        height: 35px;
+        border-radius: 18px;
+      }
+      .fa-search {
+        position: absolute;
+        left: 10px;
+        top: 8px;
+      }
+      #search_right_icon {
+        position: absolute;
+        right: 10px;
+        top: 8px;
+      }
+
+      #search {
+        position: relative;
       }
 
       #space {
@@ -82,17 +102,20 @@
       }
       footer {
         height: 100px;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
       }
       .b-top {
         height: 50px;
-        background-color: olive;
-        border: 1px solid black;
+        line-height: 50px;
+        /* background-color: olive; */
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
       }
       .b-bottom {
         height: 50px;
-        background-color: olive;
-        border: 1px solid black;
+        line-height: 50px;
+        /* background-color: olive;
+        border: 1px solid black; */
       }
     </style>
     <title>google</title>
@@ -110,13 +133,13 @@
           <a href="#"><i class="fa fa-bars" aria-hidden="true"></i> </a>
         </div>
       </header>
-      <div style="position">
-        <img
-          src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-        />
-        <br />
-      </div>
+
       <section>
+        <div>
+          <img
+            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+          />
+        </div>
         <div id="search">
           <i class="fa fa-search" aria-hidden="true"></i>
           <input />
